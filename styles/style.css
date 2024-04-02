@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+
+html {
+    background-color: rgb(151, 13, 151);
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.wrapper-title  {
+    color: white;
+    font-family: "Archivo Narrow", sans-serif;
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+.contain-img {
+    margin: 0 auto;
+}
+
+.contain-input form {
+    width: 500px;
+}
+
+.contain-input form .input-box {
+    display: flex;
+    align-items: center;
+}
+
+.contain-input .alert-message {
+    color: rgba(255, 255, 255, 0.7);
+    border-radius: 0.3rem 1rem 1rem 0.3rem;
+    padding: 0.5rem;
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 0.5rem 0 0 0;
+    font-family: "Archivo Narrow", sans-serif;
+    text-align: left !important;
+}
+
+.contain-input .alert-message-true {
+    background-color: rgba(0, 194, 0, 0.8);
+}
+
+.contain-input .alert-message-false {
+    background-color: rgba(194, 0, 0, 0.8);
+}
+
+.contain-input form .input-box input {
+    border-radius: 0.8rem 0 0 0.8rem;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: "Archivo Narrow", sans-serif;
+    padding: 1rem;
+    width: 100%;
+}
+
+.contain-input form .input-box button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(4, 133, 10);
+    border-radius: 0 0.8rem 0.8rem 0;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Archivo Narrow", sans-serif;
+    padding: 1rem;
+}
+
+.contain-img {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contain-img img {
+    margin: 1rem auto;
+    width: 200px;
+}
+
+.wrapper .alert-content-contain {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.wrapper .alert-content-contain i {
+    left: 0;
+    position: absolute;
+    padding: 1rem;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    background-color: yellow;
+}
+
+.wrapper .alert-content-contain  .alert-content {
+    padding: 0.5rem 0.5rem 0.5rem 4rem;
+    color: white;
+    font-family: "Archivo Narrow", sans-serif;
+    margin: 0 0 1rem 0;
+    text-align: left;
+}
+
+@media (max-width: 690px) {
+
+    .wrapper {
+        max-width: 90%;
+        margin: 2rem 0 0 0;
+        position: static;
+        transform: none;
+    }
+
+    .wrapper-title {
+        font-size: 1.3rem;
+    }
+
+    .contain-input form {
+        max-width: 100%;
+    }
+
+    .contain-input form .input-box input {
+        font-size: 0.9rem;
+        font-family: "Archivo Narrow", sans-serif;
+        padding: 0.85rem;
+        width: 100%;
+    }
+
+    .contain-input form .input-box button {
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding: 0.9rem;
+    }
+
+    .contain-img img {
+        width: 200px;
+    }
+
+    .contain-input .alert-message {
+        padding: 0.4rem;
+        font-size: 0.9rem;
+    }
+
+    .wrapper .alert-content-contain h3, .wrapper .alert-content-contain p {
+        font-size: 1rem;
+    }
+}
