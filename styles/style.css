@@ -97,6 +97,7 @@ html {
 }
 
 .wrapper .alert-content-contain {
+    width: 100%;
     position: relative;
     background-color: rgba(255, 255, 255, 0.3);
 }
@@ -112,11 +113,16 @@ html {
 }
 
 .wrapper .alert-content-contain  .alert-content {
+    max-width: 500px;
     padding: 0.5rem 0.5rem 0.5rem 4rem;
     color: white;
     font-family: "Archivo Narrow", sans-serif;
     margin: 0 0 1rem 0;
     text-align: left;
+}
+
+.wrapper .alert-content-contain  .alert-content p {
+    word-wrap: break-word;
 }
 
 @media (max-width: 690px) {
