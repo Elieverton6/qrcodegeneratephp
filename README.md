@@ -1,2 +1,2 @@
-# QRCODE PHP
-Sistema de QRCODE com PHP
+# QRCode PHP
+Sistema de QRCode com PHP
